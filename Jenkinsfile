@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        GITHUB_REF = "${params.default_branch}"   
+        GITHUB_REF = "${params.ref}"   
         }
     stages {
         stage("pylint test") {
