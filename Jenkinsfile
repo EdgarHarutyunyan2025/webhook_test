@@ -4,7 +4,7 @@ pipeline {
         stage("pylint test") {
             steps{
                 script {
-                    def payload = request.payload
+                    def payload = $payload
                     echo "Received GitHub webhook payload: ${payload}"
                 }    
             }
