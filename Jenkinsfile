@@ -3,10 +3,8 @@ pipeline {
     stages {
         stage("pylint test") {
             steps{
-                steps {
                 
                     sh "cat payload"
-                }    
             }
         }
     }
