@@ -6,6 +6,7 @@ pipeline {
                 echo "======= start ======="
                 sh """ls -la
                       env
+                      echo "$GIT_COMMIT"
                       cat *.py"""
 
             }
