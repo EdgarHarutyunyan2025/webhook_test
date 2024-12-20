@@ -6,6 +6,7 @@ pipeline {
                 script {
                     def payload = readJSON text: params.payload
                     echo "Received Push Event: ${payload}"
+                }    
             }
         }
     }
