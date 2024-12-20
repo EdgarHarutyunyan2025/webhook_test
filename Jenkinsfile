@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage("pylint test") {
             steps{
-                echo "Payload: ${params}"
+                echo "========= GITHUB ===========  ${GITHUB_PAYLOAD}"
                 sh "env"
             }
         }
