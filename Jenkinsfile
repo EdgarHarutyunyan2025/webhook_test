@@ -1,5 +1,5 @@
 pipeline {
-    agent { image "python:latest" }
+    agent any
     stages {
         stage("pylint test") {
             steps{
