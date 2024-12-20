@@ -4,7 +4,7 @@ pipeline {
         stage("pylint test") {
             steps{
                 
-                    sh "cat payload"
+                    sh "env"
             }
         }
     }
