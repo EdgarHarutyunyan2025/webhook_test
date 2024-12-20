@@ -5,6 +5,7 @@ pipeline {
             steps{
                 echo "======= start ======="
                 sh """ls -la
+                      env
                       cat *.py"""
 
             }
